@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".views.activities.GetStartedActivity">
+
+        <View
+            android:id="@+id/view_banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@mipmap/ic_get_started"
+            app:layout_constraintBottom_toTopOf="@+id/txt_welcome_msg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_banner_vector"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0"
+            android:layout_marginBottom="@dimen/dp_10"
+            android:background="@drawable/view_get_started_bg"
+            app:layout_constraintBottom_toTopOf="@+id/txt_welcome_msg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_left_curve"
+            android:layout_width="@dimen/dp_300"
+            android:layout_height="@dimen/dp_150"
+            android:layout_marginTop="@dimen/dp_430"
+            android:background="@drawable/view_left_curve_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/view_both_curve"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_500"
+            android:background="@drawable/view_both_curve_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_my_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_extra_bold"
+            android:gravity="center"
+            android:text="@string/TxtMyShop"
+            android:textAppearance="@style/myShop"
+            app:layout_constraintBottom_toBottomOf="@+id/view_banner_image"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/view_both_curve" />
+
+        <TextView
+            android:id="@+id/txt_welcome_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/sp_2"
+            android:text="@string/TxtWelcomeMsg"
+            android:textAppearance="@style/IntroWelcomeMsg"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_get_started"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txt_my_shop" />
+
+        <Button
+            android:id="@+id/btn_get_started"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_corner_curve_bg"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center"
+            android:text="@string/BtnGetStarted"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="@+id/view_both_curve"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/txt_welcome_msg" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
+

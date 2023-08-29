@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Name -->
+
+    <style name="myShop" >
+        <item name="android:textSize">@dimen/sp_31</item>
+        <item name="android:letterSpacing">0.06</item>
+    </style>
+
+    <style name="IntroWelcomeMsg">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="WhatIsPhone">
+        <item name="android:textSize">@dimen/sp_25</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="PleaseEnterPhone">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/please_enter</item>
+    </style>
+
+    <style name="MobNo">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/purple_faint</item>
+    </style>
+
+    <style name="SkipBtn">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/white_faint</item>
+    </style>
+
+    <style name="ChangePhone">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/purple_faint</item>
+    </style>
+
+    <style name="SeeMore">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/yellow</item>
+    </style>
+
+    <style name="CatalogueTitle">
+        <item name="android:textSize">@dimen/sp_19</item>
+        <item name="android:letterSpacing">-0.03</item>
+        <item name="android:textColor">@color/purple_faint</item>
+    </style>
+
+    <style name="SeeAll">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/white_faint
+        </item>
+    </style>
+
+    <style name="ProductName">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">@color/purple_faint</item>
+    </style>
+
+    <style name="ProductPrice">
+        <item name="android:textSize">@dimen/sp_17</item>
+        <item name="android:letterSpacing">-0.02</item>
+        <item name="android:textColor">@color/purple_faint</item>
+    </style>
+
+    <style name="TabNames">
+        <item name="android:textSize">@dimen/sp_10</item>
+        <item name="android:letterSpacing">0.01</item>
+        <item name="android:textColor">@color/white_faint</item>
+        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
+    </style>
+
+    <style name="SpinnerTheme">
+        <item name="android:textSize">@dimen/sp_12</item>
+        <item name="android:textColor">@color/purple_faint</item>
+        <item name="android:fontFamily">@font/sf_pro_text_bold</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="SpinnerOfFilterTheme">
+        <item name="android:textSize">@dimen/sp_14</item>
+        <item name="android:textColor">@color/dark_gray</item>
+        <item name="android:fontFamily">@font/sf_pro_text_regular</item>
+    </style>
+</resources>

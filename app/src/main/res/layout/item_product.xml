@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_for_home_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp_10"
+        app:cardElevation="@dimen/dp_0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint_layout_product_card"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_home_bg">
+
+            <ImageView
+                android:id="@+id/img_product_card"
+                android:layout_width="@dimen/dp_163"
+                android:layout_height="@dimen/dp_163"
+                android:background="@drawable/card_product_img_bg"
+                android:contentDescription="@string/HintProductImage"
+                android:scaleType="fitCenter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/float_btn_favourite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/dp_12"
+                android:layout_marginBottom="-6dp"
+                android:backgroundTint="@color/white"
+                android:contentDescription="@string/HintFloatBtn"
+                android:src="@drawable/ic_float_heart_icon"
+                app:borderWidth="@dimen/dp_0"
+                app:fabCustomSize="@dimen/dp_36"
+                app:layout_constraintBottom_toBottomOf="@+id/rating_bar_product"
+                app:layout_constraintEnd_toEndOf="@+id/img_product_card" />
+
+            <RatingBar
+                android:id="@+id/rating_bar_product"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dp_2"
+                android:numStars="5"
+                android:progressTint="@color/star_color"
+                android:rating="3.4"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/img_product_card" />
+
+            <TextView
+                android:id="@+id/txt_product_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_text_regular"
+                android:text="@string/TxtProductName"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rating_bar_product" />
+
+            <TextView
+                android:id="@+id/txt_product_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/sf_pro_text_bold"
+                android:text="@string/TxtDemoPrice"
+                android:textAppearance="@style/ProductPrice"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_product_name" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</layout>
+

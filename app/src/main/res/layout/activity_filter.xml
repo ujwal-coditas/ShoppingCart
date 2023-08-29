@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/scroll_filter_activity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/activity_home_bg"
+        >
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/activity_home_bg">
+
+            <include
+                android:id="@+id/include_action_bar"
+                layout="@layout/action_bar_home" />
+
+            <TextView
+                android:id="@+id/txt_price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:text="@string/TxtPrice"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/include_action_bar"
+                />
+
+            <com.google.android.material.slider.RangeSlider
+                android:id="@+id/rs_price_range"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_8"
+                android:valueFrom="0"
+                android:valueTo="1000"
+                app:labelBehavior="gone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txt_price_range"
+                app:thumbColor="@color/white"
+                app:thumbRadius="@dimen/dp_17"
+                app:trackColorActive="@color/yellow"
+                app:trackColorInactive="@color/white_faint"
+                app:trackHeight="@dimen/dp_4"
+                app:values="@array/initial_slider_values" />
+
+            <LinearLayout
+                android:id="@+id/linear_layout_price_range"
+                android:layout_width="@dimen/dp_400"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_17"
+                android:background="@drawable/ic_filter_views_bg"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/rs_price_range">
+
+                <TextView
+                    android:id="@+id/txt_lower_price_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_74"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="@string/TxtDemoPrice" />
+
+                <com.google.android.material.divider.MaterialDivider
+                    android:layout_width="@dimen/dp_1"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/dp_79"
+                    android:background="@color/white_faint" />
+
+                <TextView
+                    android:id="@+id/txt_upper_price_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp_90"
+                    android:layout_marginTop="@dimen/dp_14"
+                    android:text="@string/TxtDemoPrice" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_sub_categories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:textSize="@dimen/sp_14"
+                android:text="@string/TxtCategories"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/linear_layout_price_range" />
+
+            <Spinner
+                android:id="@+id/spinner_sub_categories"
+                android:layout_width="@dimen/dp_400"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/ic_filter_views_bg"
+                android:entries="@array/SpinnerSubCategories"
+                android:theme="@style/SpinnerOfFilterTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sub_categories" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginEnd="@dimen/dp_22"
+                android:src="@drawable/ic_right_pointing_arrow"
+                app:layout_constraintEnd_toEndOf="@id/spinner_sub_categories"
+                app:layout_constraintTop_toTopOf="@id/spinner_sub_categories" />
+
+            <TextView
+                android:id="@+id/txt_brand_names"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/TxtBrand"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_sub_categories" />
+
+            <Spinner
+                android:id="@+id/spinner_brand_names"
+                android:layout_width="@dimen/dp_400"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/ic_filter_views_bg"
+                android:entries="@array/SpinnerBrandNames"
+                android:theme="@style/SpinnerOfFilterTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_brand_names" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_18"
+                android:layout_marginEnd="@dimen/dp_22"
+                android:src="@drawable/ic_right_pointing_arrow"
+                app:layout_constraintEnd_toEndOf="@id/spinner_brand_names"
+                app:layout_constraintTop_toTopOf="@id/spinner_brand_names" />
+
+            <TextView
+                android:id="@+id/txt_color"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_24"
+                android:text="@string/TxtColor"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_brand_names" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_color_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/txt_color"
+                tools:listitem="@layout/item_color_circle" />
+
+            <TextView
+                android:id="@+id/txt_size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="@string/TxtSize"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_color_selector" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_size_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintTop_toBottomOf="@id/txt_size"
+                tools:listitem="@layout/item_size_select" />
+
+            <TextView
+                android:id="@+id/txt_sort_by_filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_15"
+                android:text="@string/TxtSortBy"
+                android:fontFamily="@font/sf_pro_text_semi_bold"
+                android:textSize="@dimen/sp_14"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/recycler_size_selector" />
+
+            <Spinner
+                android:id="@+id/spinner_sort_by"
+                android:layout_width="@dimen/dp_400"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_16"
+                android:layout_marginTop="@dimen/dp_8"
+                android:background="@drawable/ic_filter_views_bg"
+                android:entries="@array/SpinnerSubCategories"
+                android:theme="@style/SpinnerOfFilterTheme"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txt_sort_by_filter" />
+
+            <Button
+                android:id="@+id/btn_result"
+                android:layout_width="@dimen/dp_400"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_32"
+                android:layout_marginBottom="@dimen/dp_20"
+                android:background="@drawable/btn_corner_curve_bg"
+                android:text="@string/BtnResultTxt"
+                app:backgroundTint="@null"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spinner_sort_by" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</layout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/home_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_110"
+        android:background="@drawable/ac_home_bg">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_110"
+            android:background="@drawable/ac_home_bg">
+
+            <ImageView
+                android:id="@+id/btn_menu"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/dp_24"
+                android:backgroundTint="@null" />
+
+            <TextView
+                android:id="@+id/txt_my_shop_ac"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat_extra_bold"
+                android:gravity="center"
+                android:text="@string/TxtMyShop"
+                android:textSize="@dimen/sp_18"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/btn_notifications"
+                android:layout_width="@dimen/dp_30"
+                android:layout_height="@dimen/dp_30"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_24"
+                android:backgroundTint="@null" />
+
+
+        </RelativeLayout >
+    </androidx.appcompat.widget.Toolbar>
+</layout>

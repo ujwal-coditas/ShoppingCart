@@ -1,0 +1,75 @@
+<resources>
+    <string name="AppNameMyShop">MyShop</string>
+    <string name="TxtWhatPhoneNo">What Is Your Phone\nNumber?</string>
+    <string name="TxtEnterPhoneNo">Please enter your phone number to verify\nyour account</string>
+    <string name="BtnSkip">Skip</string>
+    <string name="BtnResend">Resend</string>
+    <string name="TxtVerificationCode">Verification\nCode</string>
+    <string name="TxtEnterCode">Please enter Code sent to</string>
+    <string name="BtnChangePhone"><u>Change Phone Number</u></string>
+    <string name="TxtMyShop"><font color="#E7B944">My</font><font color='#FFFFFFFF'>Shop</font></string>
+    <string name="TxtWelcomeMsg">Lorem Ipsum is simply dummy text of the\nprinting and typesetting industry</string>
+    <string name="BtnGetStarted">Get Started</string>
+    <string name="BtnSendVerification">Send Verification Code</string>
+    <string name="BtnValidate">Validate</string>
+    <string name="HintMobNo">Mobile No</string>
+    <string name="TxtMobNo">+919999999999</string>
+    <string name="HintSearchBox">What are your looking for?</string>
+    <string name="TxtFashionSale">Fashion Sale</string>
+    <string name="TxtSeeMore">See More</string>
+    <string name="TxtWomenFashion">Women\'s\nFashion</string>
+    <string name="TxtWomenFashionCatalogue">Women\'s Fashion</string>
+    <string name="TxtCatalogue">Catalogue</string>
+    <string name="TxtCatalogueWithColor"><font color='#FFFFFFFF'>Catalogue</font></string>
+    <string name="TxtSeeAll">See All</string>
+    <string name="TxtProductName">Saodimallsu Womens Turtleneck Oversized…</string>
+    <string name="HintFloatBtn">Favourite button</string>
+    <string name="HintProductImage">Product image</string>
+    <string name="TxtDemoPrice">00.00</string>
+    <string name="TxtFeatured">Featured</string>
+    <string name="TxtPriceWithDollar">$%1$f</string>
+    <string name="EdtEnterOtp">Enter OTP</string>
+    <string name="TabNameHome">Home</string>
+    <string name="TabNameCatalogue">Catalogue</string>
+    <string name="TabNameFavorite">Favorite</string>
+    <string name="TabNameProfile">Profile</string>
+    <string name="TxtCartItem">2 Items</string>
+    <string name="HintCart">cart</string>
+    <string name="TxtProfile">Profile</string>
+    <string name="TxtFavorite">Favorite</string>
+    <string name="BtnTxtSignInGoogle">Sign In with Google</string>
+    <string name="TxtNoOfItems">0 items</string>
+    <string name="TxtSortBy">Sort by:</string>
+    <string name="NumberOfTask">%1$d items</string>
+    <string name="TxtAllSubCategory">All</string>
+    <string name="TxtPrice">Price</string>
+    <string name="TxtCategories">Categories</string>
+    <string name="TxtBrand">Brand</string>
+    <string name="TxtColor">Color</string>
+    <string name="TxtSize">Size</string>
+    <string name="TxtDemoSize">XL</string>
+    <string name="BtnResultTxt">Result</string>
+
+    <string-array name="SpinnerSubCategories">
+        <item>Clothing</item>
+        <item>Shoes</item>
+        <item>Jewelry</item>
+        <item>Watches</item>
+        <item>Accessories</item>
+        <item>Mens Fashion</item>
+        <item>Girls Fashion</item>
+        <item>Boys Fashion</item>
+    </string-array>
+    <string-array name="SpinnerBrandNames">
+        <item>London Britches</item>
+        <item>Catwalk Juniors</item>
+        <item>Bewitched Boutique</item>
+        <item>Adventure Apparel</item>
+        <item>Hunny Bunny</item>
+        <item>Rosebuds</item>
+    </string-array>
+    <array name="initial_slider_values">
+        <item>0</item>
+        <item>0</item>
+    </array>
+</resources>

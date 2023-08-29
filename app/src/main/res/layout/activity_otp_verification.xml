@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activities.OtpVerificationActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_right_bottom_curve"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_197"
+            android:background="@drawable/view_lower_curve_bg"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/txt_verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/TxtVerificationCode"
+            android:textAppearance="@style/WhatIsPhone"
+            app:layout_constraintBottom_toBottomOf="@+id/view_right_bottom_curve"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_enter_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:layout_marginTop="@dimen/dp_32"
+            android:fontFamily="@font/sf_pro_text_regular"
+            android:text="@string/TxtEnterCode"
+            android:textAppearance="@style/PleaseEnterPhone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_right_bottom_curve" />
+
+        <TextView
+            android:id="@+id/txt_mobile_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp_24"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="top"
+            android:text="@string/TxtMobNo"
+            android:textAppearance="@style/MobNo"
+            app:layout_constraintBottom_toTopOf="@+id/edt_enter_otp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_enter_code" />
+
+        <EditText
+            android:id="@+id/edt_enter_otp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_120"
+            android:autofillHints="9999999999"
+            android:background="@drawable/edt_phone_no_bg"
+            android:gravity="center"
+            android:hint="@string/EdtEnterOtp"
+            android:inputType="phone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_right_bottom_curve" />
+
+        <TextView
+            android:id="@+id/txt_change_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_8"
+            android:text="@string/BtnChangePhone"
+            android:textAppearance="@style/ChangePhone"
+            app:layout_constraintBottom_toTopOf="@+id/edt_enter_otp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/txt_mobile_no"
+            app:layout_constraintTop_toBottomOf="@+id/txt_enter_code" />
+
+        <Button
+            android:id="@+id/btn_validate"
+            android:layout_width="@dimen/dp_327"
+            android:layout_height="@dimen/dp_64"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/btn_corner_curve_bg"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center"
+            android:text="@string/BtnValidate"
+            app:backgroundTint="@null"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_enter_otp"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/btn_resend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:gravity="center"
+            android:text="@string/BtnResend"
+            android:textAppearance="@style/SkipBtn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/btn_validate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
